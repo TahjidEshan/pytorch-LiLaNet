@@ -202,13 +202,13 @@ if __name__ == '__main__':
                         help='input batch size for validation')
     parser.add_argument('--num-workers', type=int, default=2,
                         help='number of workers')
-    parser.add_argument('--epochs', type=int, default=200,
+    parser.add_argument('--epochs', type=int, default=10,
                         help='number of epochs to train')
     parser.add_argument('--lr', type=float, default=1e-3,
                         help='learning rate')
     parser.add_argument('--seed', type=int, default=123,
                         help='manual seed')
-    parser.add_argument('--output-dir', default='checkpoints',
+    parser.add_argument('--output-dir', default='/content/gdrive/My Drive/Colab Notebooks/pytorch-LiLaNet/checkpoints',
                         help='directory to save model checkpoints')
     parser.add_argument('--resume', type=str, metavar='PATH',
                         help='path to latest checkpoint (default: none)')
@@ -216,9 +216,9 @@ if __name__ == '__main__':
                         help='manual epoch number (useful on restarts)')
     parser.add_argument('--log-interval', type=int, default=10,
                         help='how many batches to wait before logging training status')
-    parser.add_argument("--log-dir", type=str, default="logs",
+    parser.add_argument("--log-dir", type=str, default="/content/gdrive/My Drive/Colab Notebooks/pytorch-LiLaNet/logs",
                         help="log directory for Tensorboard log output")
-    parser.add_argument("--dataset-dir", type=str, default="data/kitti",
+    parser.add_argument("--dataset-dir", type=str, default="/content/gdrive/My Drive/Colab Notebooks/pytorch-LiLaNet/data/kitti",
                         help="location of the dataset")
     parser.add_argument("--eval-on-start", type=bool, default=False,
                         help="evaluate before training")

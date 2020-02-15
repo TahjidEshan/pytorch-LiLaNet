@@ -196,11 +196,11 @@ def run(args):
 
 if __name__ == '__main__':
     parser = ArgumentParser('LiLaNet with PyTorch')
-    parser.add_argument('--batch-size', type=int, default=10,
+    parser.add_argument('--batch-size', type=int, default=5,
                         help='input batch size for training')
-    parser.add_argument('--val-batch-size', type=int, default=10,
+    parser.add_argument('--val-batch-size', type=int, default=5,
                         help='input batch size for validation')
-    parser.add_argument('--num-workers', type=int, default=4,
+    parser.add_argument('--num-workers', type=int, default=2,
                         help='number of workers')
     parser.add_argument('--epochs', type=int, default=200,
                         help='number of epochs to train')
